@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IPC Carmel Dubai – A Malayalam Pentecostal Church in Dubai, UAE. Join us for Sunday worship, prayer meetings, and fellowship.">
+  <title>IPC Carmel Dubai – Home</title>
+  <!-- Bootstrap local -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo/logo.png" alt="IPC Carmel Dubai logo" width="180" height="57">
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html#church-history">Church History</a></li>
+              <li><a class="dropdown-item" href="about.html#our-leadership">Our Leadership</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+
+  <!-- ═══════════════════════════════ HERO ═════════════════════════════════ -->
+  <section class="hero" aria-label="Welcome hero banner">
+
+    <!-- Video layer -->
+    <div class="hero-video-wrap" aria-hidden="true">
+      <!--
+        Hero videos: videos/hero/hero1.mp4, hero2.mp4, hero3.mp4
+        Add more videos with those filenames and they rotate automatically.
+        If a file is missing the navy gradient fallback shows instead.
+      -->
+      <video class="hero-video active" src="videos/hero/hero1.mp4"
+             muted autoplay playsinline loop preload="auto"
+             aria-hidden="true"></video>
+      <video class="hero-video" src="videos/hero/hero2.mp4"
+             muted playsinline loop preload="none"
+             aria-hidden="true"></video>
+      <video class="hero-video" src="videos/hero/hero3.mp4"
+             muted playsinline loop preload="none"
+             aria-hidden="true"></video>
+    </div>
+
+    <!-- Dark overlay -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- Fixed text overlay – stays still while videos rotate -->
+    <div class="hero-text">
+      <p class="welcome-label">Welcome To</p>
+      <h1>IPC Carmel Dubai</h1>
+      <p class="hero-service-info">Sunday Worship : 5 PM – 7:30 PM &nbsp;|&nbsp; Hall F3, Dubai Trinity Church</p>
+    </div>
+
+    <!-- Carousel indicator dots (auto-hidden when only 1 video is present) -->
+    <div class="hero-dots" role="tablist" aria-label="Hero video slides" id="heroDots">
+      <button class="hero-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+      <button class="hero-dot"        role="tab" aria-label="Slide 2" aria-selected="false"></button>
+      <button class="hero-dot"        role="tab" aria-label="Slide 3" aria-selected="false"></button>
+    </div>
+  </section>
+  <!-- /HERO -->
+
+  <!-- ═══════════════════════ INTRO VIDEO + UPCOMING EVENTS ════════════════ -->
+  <section class="two-col-section">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- LEFT: Intro Video -->
+        <div class="col-12 col-md-6 fade-up">
+          <div class="media-card h-100">
+            <div class="media-card-header">
+              <span class="card-icon" aria-hidden="true">▶</span>
+              <h3>Intro Video</h3>
+            </div>
+            <div class="media-card-body">
+              <!-- YouTube embed – replace ImBhrNFH-CI with your real video ID -->
+              <div class="yt-iframe-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
+                  title="IPC Carmel Dubai Introduction Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Upcoming Events -->
+        <div class="col-12 col-md-6 fade-up">
+          <div class="media-card h-100">
+            <div class="media-card-header">
+              <span class="card-icon" aria-hidden="true">📅</span>
+              <h3>Upcoming Events</h3>
+            </div>
+            <div class="event-info" style="padding:32px;flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;">
+              <p class="event-date">📅 Sunday, 15 December 2024</p>
+              <h4 style="font-size:1.5rem;">Annual Thanksgiving Service</h4>
+              <p>Join us for a special evening of praise, worship, and gratitude as we thank the Lord for His abundant blessings this year. All are welcome.</p>
+              <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">📍 Hall F3, Dubai Trinity Church</p>
+              <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">⏰ 5:00 PM – 7:30 PM</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /INTRO + EVENTS -->
+
+  <!-- ═══════════════════════ YOUTUBE SPOTLIGHT ════════════════════════════ -->
+  <section class="spotlight-section">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-heading centered">YouTube Spotlight</h2>
+        <div class="gold-divider"></div>
+        <p class="text-muted mt-2" style="max-width:540px;margin:0 auto;font-size:0.95rem;">
+          Catch up on our latest sermons, worship sessions, and special programmes.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Video 1 – replace ImBhrNFH-CI with real YouTube video IDs -->
+        <div class="col-12 col-md-4 fade-up">
+          <div class="yt-card">
+            <div class="yt-iframe-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
+                title="IPC Carmel Dubai – Sunday Worship Service"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy">
+              </iframe>
+            </div>
+            <div class="yt-card-label">
+              <p>Sunday Worship Service</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="col-12 col-md-4 fade-up">
+          <div class="yt-card">
+            <div class="yt-iframe-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
+                title="IPC Carmel Dubai – Wednesday Bible Study"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy">
+              </iframe>
+            </div>
+            <div class="yt-card-label">
+              <p>Wednesday Bible Study</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="col-12 col-md-4 fade-up">
+          <div class="yt-card">
+            <div class="yt-iframe-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
+                title="IPC Carmel Dubai – Special Programme"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy">
+              </iframe>
+            </div>
+            <div class="yt-card-label">
+              <p>Special Programme</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /SPOTLIGHT -->
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between align-items-start">
+
+        <!-- Brand -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="footer-brand">
+            <img src="images/logo/logo.png" alt="IPC Carmel Dubai logo" width="160" height="51">
+            <h5>IPC Carmel Dubai</h5>
+            <p>A Malayalam Pentecostal Church<br>Al Qusais, Dubai, UAE</p>
+          </div>
+          <div class="footer-social">
+            <!-- Email -->
+            <a href="mailto:info@ipccarmeldubai.com"
+               aria-label="Email IPC Carmel Dubai">
+              <!-- Simple inline SVG envelope icon – no external library needed -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="IPC Carmel Dubai on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-3">
+          <h6 style="color:var(--gold);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;font-family:var(--sans);">Quick Links</h6>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
+            <li><a href="index.html"                    style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Home</a></li>
+            <li><a href="about.html#church-history"     style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Church History</a></li>
+            <li><a href="about.html#our-leadership"     style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Our Leadership</a></li>
+            <li><a href="gallery.html"                  style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-6 col-md-3">
+          <h6 style="color:var(--gold);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;font-family:var(--sans);">Contact</h6>
+          <address style="font-style:normal;font-size:0.87rem;color:rgba(255,255,255,0.65);line-height:1.8;margin:0;">
+            Al Qusais Industrial Area 2<br>
+            Dubai, UAE<br>
+            <a href="mailto:info@ipccarmeldubai.com"
+               style="color:rgba(201,162,39,0.85);">info@ipccarmeldubai.com</a>
+          </address>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider">
+      <p class="footer-copy">
+        &copy; <span id="footerYear"></span> IPC Carmel Dubai. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
+  <!-- Bootstrap JS (local) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>
