@@ -5,26 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="IPC Carmel Dubai – A Malayalam Pentecostal Church in Dubai, UAE. Join us for Sunday worship, prayer meetings, and fellowship.">
   <title>IPC Carmel Dubai – Home</title>
-  <!-- Bootstrap local -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Custom styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo/logo.png" alt="IPC Carmel Dubai logo" width="180" height="57">
       </a>
-
       <button class="navbar-toggler" type="button"
               data-bs-toggle="collapse" data-bs-target="#mainNav"
               aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
           <li class="nav-item">
@@ -35,7 +31,8 @@
                data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="about.html#church-history">Church History</a></li>
-              <li><a class="dropdown-item" href="about.html#our-leadership">Our Leadership</a></li>
+              <li><a class="dropdown-item" href="about.html#what-we-believe">What We Believe</a></li>
+              <li><a class="dropdown-item" href="about.html#our-pastor">Our Pastor</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -45,49 +42,157 @@
       </div>
     </div>
   </nav>
-  <!-- /NAVBAR -->
 
-  <!-- ═══════════════════════════════ HERO ═════════════════════════════════ -->
+  <!-- HERO -->
   <section class="hero" aria-label="Welcome hero banner">
-
-    <!-- Video layer -->
     <div class="hero-video-wrap" aria-hidden="true">
-      <!--
-        Hero videos: videos/hero/hero1.mp4, hero2.mp4, hero3.mp4
-        Add more videos with those filenames and they rotate automatically.
-        If a file is missing the navy gradient fallback shows instead.
-      -->
-      <video class="hero-video active" src="videos/hero/hero1.mp4"
-             muted autoplay playsinline loop preload="auto"
-             aria-hidden="true"></video>
-      <video class="hero-video" src="videos/hero/hero2.mp4"
-             muted playsinline loop preload="none"
-             aria-hidden="true"></video>
-      <video class="hero-video" src="videos/hero/hero3.mp4"
-             muted playsinline loop preload="none"
-             aria-hidden="true"></video>
+      <video class="hero-video active" src="videos/hero/hero1.mp4" muted autoplay playsinline loop preload="auto" aria-hidden="true"></video>
+      <video class="hero-video" src="videos/hero/hero2.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+      <video class="hero-video" src="videos/hero/hero3.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
     </div>
-
-    <!-- Dark overlay -->
     <div class="hero-overlay" aria-hidden="true"></div>
-
-    <!-- Fixed text overlay – stays still while videos rotate -->
     <div class="hero-text">
       <p class="welcome-label">Welcome To</p>
       <h1>IPC Carmel Dubai</h1>
-      <p class="hero-service-info">Sunday Worship : 5 PM – 7:30 PM &nbsp;|&nbsp; Hall F3, Dubai Trinity Church</p>
+      <p class="hero-service-info">Sunday Worship : 5 PM &ndash; 7:30 PM &nbsp;|&nbsp; Hall F3, Dubai Trinity Church</p>
     </div>
-
-    <!-- Carousel indicator dots (auto-hidden when only 1 video is present) -->
     <div class="hero-dots" role="tablist" aria-label="Hero video slides" id="heroDots">
       <button class="hero-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
-      <button class="hero-dot"        role="tab" aria-label="Slide 2" aria-selected="false"></button>
-      <button class="hero-dot"        role="tab" aria-label="Slide 3" aria-selected="false"></button>
+      <button class="hero-dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+      <button class="hero-dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
     </div>
   </section>
-  <!-- /HERO -->
 
-  <!-- ═══════════════════════ INTRO VIDEO + UPCOMING EVENTS ════════════════ -->
+  <!-- VISION -->
+  <section class="vision-section">
+    <div class="container">
+      <div class="text-center mb-4 fade-up">
+        <h2 class="section-heading centered">Our Vision</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 fade-up">
+          <div class="vision-card">
+            <p>&ldquo;To be a faithful, growing church, that demonstrates true community, deep Christian spirituality and a passion for justice.&rdquo;</p>
+            <span class="vision-ref">Micah 6:8</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 fade-up">
+          <div class="vision-card">
+            <p>&ldquo;To be and to share the Good News of Jesus Christ, witnessing, loving and serving from our doorsteps to the ends of the earth.&rdquo;</p>
+            <span class="vision-ref">Acts 1:8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHURCH PROGRAMS -->
+  <section class="programs-section">
+    <div class="container">
+      <div class="text-center mb-5 fade-up">
+        <h2 class="section-heading centered">Church Programs</h2>
+        <div class="gold-divider"></div>
+      </div>
+      <div class="row g-3">
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">Every Sunday</p></div>
+            <div class="program-card-body">
+              <h5>Main Worship Service</h5>
+              <div class="program-meta">
+                <div class="program-row"><span class="program-label">Time</span><span class="program-value">05:00 PM &ndash; 07:30 PM</span></div>
+                <div class="program-row"><span class="program-label">Venue</span><span class="program-value">Hall No. F-3, Holy Trinity Church, Dubai</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">Every Sunday</p></div>
+            <div class="program-card-body">
+              <h5>Scripture Class for Kids</h5>
+              <div class="program-meta">
+                <div class="program-row"><span class="program-label">Time</span><span class="program-value">07:30 PM &ndash; 08:30 PM</span></div>
+                <div class="program-row"><span class="program-label">Venue</span><span class="program-value">Holy Trinity Church, Dubai</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">Every Friday</p></div>
+            <div class="program-card-body">
+              <h5>Bible Study</h5>
+              <div class="program-meta">
+                <div class="program-row"><span class="program-label">Time</span><span class="program-value">08:00 PM &ndash; 09:30 PM</span></div>
+                <div class="program-row"><span class="program-label">Venue</span><span class="program-value">Online</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">First Week &ndash; Friday to Sunday</p></div>
+            <div class="program-card-body">
+              <h5>Fasting Prayer</h5>
+              <div class="program-meta">
+                <div class="program-row"><span class="program-label">Time</span><span class="program-value">08:00 PM &ndash; 09:30 PM</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">Every Thursday</p></div>
+            <div class="program-card-body">
+              <h5>Camp Meeting</h5>
+              <div class="program-meta">
+                <div class="program-row"><span class="program-label">Venue</span><span class="program-value">Al Quoz Camp</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">Last Sunday of Every Month</p></div>
+            <div class="program-card-body">
+              <h5>PYPA Meeting</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">Every Saturday</p></div>
+            <div class="program-card-body">
+              <h5>Ladies Meeting</h5>
+              <div class="program-meta">
+                <div class="program-row"><span class="program-label">Venue</span><span class="program-value">Online</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 fade-up">
+          <div class="program-card">
+            <div class="program-card-top"><p class="program-schedule">Every Third Saturday</p></div>
+            <div class="program-card-body">
+              <h5>Cottage Meeting</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO VIDEO + UPCOMING EVENTS -->
   <section class="two-col-section">
     <div class="container">
       <div class="row g-4 align-items-stretch">
@@ -96,18 +201,16 @@
         <div class="col-12 col-md-6 fade-up">
           <div class="media-card h-100">
             <div class="media-card-header">
-              <span class="card-icon" aria-hidden="true">▶</span>
+              <span class="card-icon" aria-hidden="true">&#9654;</span>
               <h3>Intro Video</h3>
             </div>
             <div class="media-card-body">
-              <!-- YouTube embed – replace ImBhrNFH-CI with your real video ID -->
               <div class="yt-iframe-wrap">
                 <iframe
                   src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
                   title="IPC Carmel Dubai Introduction Video"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy">
+                  allowfullscreen loading="lazy">
                 </iframe>
               </div>
             </div>
@@ -118,15 +221,15 @@
         <div class="col-12 col-md-6 fade-up">
           <div class="media-card h-100">
             <div class="media-card-header">
-              <span class="card-icon" aria-hidden="true">📅</span>
+              <span class="card-icon" aria-hidden="true">&#128197;</span>
               <h3>Upcoming Events</h3>
             </div>
             <div class="event-info" style="padding:32px;flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;">
-              <p class="event-date">📅 Sunday, 15 December 2024</p>
+              <p class="event-date">Sunday, 15 December 2024</p>
               <h4 style="font-size:1.5rem;">Annual Thanksgiving Service</h4>
               <p>Join us for a special evening of praise, worship, and gratitude as we thank the Lord for His abundant blessings this year. All are welcome.</p>
-              <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">📍 Hall F3, Dubai Trinity Church</p>
-              <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">⏰ 5:00 PM – 7:30 PM</p>
+              <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">&#128205; Hall F3, Holy Trinity Church, Dubai</p>
+              <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">&#9200; 5:00 PM &ndash; 7:30 PM</p>
             </div>
           </div>
         </div>
@@ -134,9 +237,8 @@
       </div>
     </div>
   </section>
-  <!-- /INTRO + EVENTS -->
 
-  <!-- ═══════════════════════ YOUTUBE SPOTLIGHT ════════════════════════════ -->
+  <!-- YOUTUBE SPOTLIGHT -->
   <section class="spotlight-section">
     <div class="container">
       <div class="text-center mb-5 fade-up">
@@ -146,129 +248,100 @@
           Catch up on our latest sermons, worship sessions, and special programmes.
         </p>
       </div>
-
-      <div class="row g-4 align-items-stretch">
-        <!-- Video 1 – replace ImBhrNFH-CI with real YouTube video IDs -->
+      <div class="row g-4">
         <div class="col-12 col-md-4 fade-up">
           <div class="yt-card">
             <div class="yt-iframe-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
+              <iframe src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
                 title="IPC Carmel Dubai – Sunday Worship Service"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy">
-              </iframe>
+                allowfullscreen loading="lazy"></iframe>
             </div>
-            <div class="yt-card-label">
-              <p>Sunday Worship Service</p>
-            </div>
+            <div class="yt-card-label"><p>Sunday Worship Service</p></div>
           </div>
         </div>
-
-        <!-- Video 2 -->
         <div class="col-12 col-md-4 fade-up">
           <div class="yt-card">
             <div class="yt-iframe-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
+              <iframe src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
                 title="IPC Carmel Dubai – Wednesday Bible Study"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy">
-              </iframe>
+                allowfullscreen loading="lazy"></iframe>
             </div>
-            <div class="yt-card-label">
-              <p>Wednesday Bible Study</p>
-            </div>
+            <div class="yt-card-label"><p>Wednesday Bible Study</p></div>
           </div>
         </div>
-
-        <!-- Video 3 -->
         <div class="col-12 col-md-4 fade-up">
           <div class="yt-card">
             <div class="yt-iframe-wrap">
-              <iframe
-                src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
+              <iframe src="https://www.youtube.com/embed/ImBhrNFH-CI?si=PDFeakz_bZZzdSt-"
                 title="IPC Carmel Dubai – Special Programme"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen loading="lazy">
-              </iframe>
+                allowfullscreen loading="lazy"></iframe>
             </div>
-            <div class="yt-card-label">
-              <p>Special Programme</p>
-            </div>
+            <div class="yt-card-label"><p>Special Programme</p></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- /SPOTLIGHT -->
 
-  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container">
       <div class="row g-4 justify-content-between align-items-start">
 
-        <!-- Brand -->
         <div class="col-12 col-md-5 col-lg-4">
           <div class="footer-brand">
             <img src="images/logo/logo.png" alt="IPC Carmel Dubai logo" width="160" height="51">
-            <h5>IPC Carmel Dubai</h5>
-            <p>A Malayalam Pentecostal Church<br>Al Qusais, Dubai, UAE</p>
+            <h5>IPC Carmel</h5>
+            <p>Dubai - U.A.E.</p>
           </div>
           <div class="footer-social">
-            <!-- Email -->
-            <a href="mailto:info@ipccarmeldubai.com"
-               aria-label="Email IPC Carmel Dubai">
-              <!-- Simple inline SVG envelope icon – no external library needed -->
+            <a href="mailto:ipccarmeldubai@gmail.com" aria-label="Email IPC Carmel Dubai">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
             </a>
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="IPC Carmel Dubai on Facebook">
+            <a href="https://www.facebook.com/p/IPC-Carmel-Church-Dubai-100064395893079/" target="_blank" rel="noopener noreferrer" aria-label="IPC Carmel Dubai on Facebook">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="http://www.youtube.com/@ipccarmeldubai" target="_blank" rel="noopener noreferrer" aria-label="IPC Carmel Dubai on YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58a2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
               </svg>
             </a>
           </div>
         </div>
 
-        <!-- Quick links -->
         <div class="col-6 col-md-3">
-          <h6 style="color:var(--gold);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;font-family:var(--sans);">Quick Links</h6>
-          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
-            <li><a href="index.html"                    style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Home</a></li>
-            <li><a href="about.html#church-history"     style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Church History</a></li>
-            <li><a href="about.html#our-leadership"     style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Our Leadership</a></li>
-            <li><a href="gallery.html"                  style="color:rgba(255,255,255,0.65);font-size:0.87rem;">Gallery</a></li>
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html#church-history">Church History</a></li>
+            <li><a href="about.html#what-we-believe">What We Believe</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
 
-        <!-- Contact -->
         <div class="col-6 col-md-3">
-          <h6 style="color:var(--gold);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;font-family:var(--sans);">Contact</h6>
-          <address style="font-style:normal;font-size:0.87rem;color:rgba(255,255,255,0.65);line-height:1.8;margin:0;">
-            Al Qusais Industrial Area 2<br>
-            Dubai, UAE<br>
-            <a href="mailto:info@ipccarmeldubai.com"
-               style="color:rgba(201,162,39,0.85);">info@ipccarmeldubai.com</a>
+          <h6 class="footer-heading">Contact</h6>
+          <address class="footer-contact">
+            Email : <a href="mailto:ipccarmeldubai@gmail.com">ipccarmeldubai@gmail.com</a><br>
+            I. P. C. Carmel<br>
+            P. O. Box 244<br>
+            Dubai - U. A. E.
           </address>
         </div>
 
       </div>
-
       <hr class="footer-divider">
-      <p class="footer-copy">
-        &copy; <span id="footerYear"></span> IPC Carmel Dubai. All rights reserved.
-      </p>
+      <p class="footer-copy">&copy; <span id="footerYear"></span> IPC Carmel Dubai. All rights reserved.</p>
     </div>
   </footer>
-  <!-- /FOOTER -->
 
-  <!-- Bootstrap JS (local) -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/chatbot.js"></script>

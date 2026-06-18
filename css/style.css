@@ -1,5 +1,5 @@
-/* =========================================================
-   IPC Carmel Dubai – Custom Stylesheet
+﻿/* =========================================================
+   IPC Carmel Dubai â€“ Custom Stylesheet
    Theme: Deep Navy #1B2A4A  |  Gold #C9A227
    ========================================================= */
 
@@ -14,7 +14,7 @@
   --gold:      #C9A227;
   --gold-light:#e0b93a;
   --white:     #ffffff;
-  --off-white: #f8f7f3;
+  --off-white: #f4f6fb;
   --text:      #2d3748;
   --text-muted:#6b7280;
   --serif:     'Playfair Display', Georgia, serif;
@@ -80,10 +80,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- Navbar ---------- */
 .navbar {
-  background: var(--navy) !important;
-  padding: 0.6rem 1.2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
-  z-index: 1050;
+  background: linear-gradient(to right, #0a002f, #d94080, #e03737, #b20a0a) !important;
 }
 
 .navbar-brand img {
@@ -102,8 +99,7 @@ img { max-width: 100%; height: auto; display: block; }
   transition: color var(--transition);
   text-transform: uppercase;
 }
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active { color: var(--gold) !important; }
+.navbar-nav .nav-link:hover,`r`n.navbar-nav .nav-link.active { color: #ffffff !important; text-decoration: underline; text-underline-offset: 4px; }
 
 .navbar-toggler {
   border: 1.5px solid var(--gold);
@@ -197,7 +193,7 @@ img { max-width: 100%; height: auto; display: block; }
   );
 }
 
-/* Fixed text – sits above videos and overlay */
+/* Fixed text â€“ sits above videos and overlay */
 .hero-text {
   position: absolute;
   inset: 0;
@@ -267,6 +263,206 @@ img { max-width: 100%; height: auto; display: block; }
   background: var(--gold);
   border-color: var(--gold);
   transform: scale(1.25);
+}
+
+/* ---------- What We Believe ---------- */
+.believe-section {
+  padding: 72px 0;
+  background: var(--white);
+}
+.belief-card {
+  position: relative;
+  background: var(--off-white);
+  border-radius: 12px;
+  padding: 28px 24px 24px;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+}
+.belief-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  background: var(--white);
+}
+.belief-number {
+  display: inline-block;
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  background: rgba(201,162,39,0.18);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.belief-card h4 {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin: 0 0 8px;
+}
+.belief-card p {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.7;
+  margin: 0;
+}
+.believe-ref {
+  display: block;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--gold);
+  font-family: var(--sans);
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Church Programs ---------- */
+.programs-section {
+  padding: 72px 0;
+  background: var(--off-white);
+}
+.program-card {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: left;
+  height: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  border: 2px solid #60245c;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+  border-color: var(--gold);
+}
+.program-card-top {
+  background: linear-gradient(135deg, #301B4A 0%, #60245c 100%);
+  padding: 16px 24px;
+}
+.program-schedule {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #dac293;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+.program-card-body {
+  background: linear-gradient(160deg, rgba(255,255,255,0.55) 0%, rgba(241,233,245,0.55) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255,255,255,0.5);
+  padding: 20px 24px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.program-card h5 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin: 0;
+}
+.program-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.program-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.program-label {
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.program-value {
+  color: var(--navy);
+  font-weight: 500;
+  text-align: right;
+}
+@media (max-width: 575.98px) {
+  .program-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .program-value {
+    text-align: left;
+  }
+}
+
+/* ---------- Vision Section ---------- */
+.vision-section {
+  padding: 64px 0 56px;
+  background: linear-gradient(135deg, #0a002f 0%, #4A1B1B 55%, var(--navy-mid) 100%);
+}
+.vision-section .section-heading {
+  color: var(--white);
+}
+.vision-section .section-heading::after {
+  background: var(--gold);
+  margin: 8px auto 0;
+}
+.vision-card {
+  background: rgba(255,255,255,0.06);
+  border: 1.5px solid rgba(201,162,39,0.35);
+  border-radius: 12px;
+  padding: 32px 28px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: background var(--transition), border-color var(--transition);
+}
+.vision-card:hover {
+  background: rgba(201,162,39,0.1);
+  border-color: var(--gold);
+}
+.vision-icon {
+  font-size: 2rem;
+  color: var(--gold);
+  line-height: 1;
+}
+.vision-card p {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.75;
+  margin: 0;
+  font-style: italic;
+}
+.vision-ref {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: auto;
 }
 
 /* ---------- Intro + Events Row ---------- */
@@ -427,9 +623,65 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--navy-dark);
-  color: rgba(255,255,255,0.8);
-  padding: 52px 0 28px;
+  background: linear-gradient(160deg, #16284d 0%, #12203f 55%, #0a1730 100%) !important;
+  padding: 64px 0 28px;
+  position: relative;
+}
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--gold), #60245c, var(--gold));
+}
+.footer-heading {
+  position: relative;
+  display: inline-block;
+  color: var(--gold);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+  font-family: var(--sans);
+  font-weight: 600;
+}
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 28px;
+  height: 2px;
+  background: var(--gold);
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-links a {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.87rem;
+  transition: color var(--transition), padding-left var(--transition);
+}
+.footer-links a:hover {
+  color: var(--gold-light);
+  padding-left: 4px;
+}
+.footer-contact {
+  font-style: normal;
+  font-size: 0.87rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.9;
+  margin: 0;
+}
+.footer-contact a {
+  color: #dac293;
 }
 
 .footer-brand img {
@@ -441,11 +693,15 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--serif);
   font-size: 1.25rem;
   color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 .footer-brand p {
   font-size: 0.82rem;
   color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   margin: 0;
 }
 
@@ -495,7 +751,7 @@ img { max-width: 100%; height: auto; display: block; }
   overflow: hidden;
 }
 .page-hero::before {
-  content: '✝';
+  content: '\271D';
   position: absolute;
   font-size: 280px;
   color: rgba(201,162,39,0.05);
@@ -504,6 +760,9 @@ img { max-width: 100%; height: auto; display: block; }
   transform: translate(-50%, -50%);
   pointer-events: none;
   line-height: 1;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  -webkit-text-stroke: 0;
 }
 .page-hero h1 {
   color: var(--white);
@@ -955,3 +1214,17 @@ img { max-width: 100%; height: auto; display: block; }
   .navbar-brand img { height: 34px; }
   .two-col-section { padding: 24px 0; }
 }
+
+
+
+
+
+/* Force active nav link to white – overrides all previous rules */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+
