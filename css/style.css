@@ -4,7 +4,7 @@
    ========================================================= */
 
 /* ---------- Google Fonts (local fallback to system serif) ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 /* ---------- CSS Variables ---------- */
 :root {
@@ -17,7 +17,7 @@
   --off-white: #f4f6fb;
   --text:      #2d3748;
   --text-muted:#6b7280;
-  --serif:     'Playfair Display', Georgia, serif;
+  --serif:     'Cormorant Garamond', Georgia, serif;
   --sans:      'Inter', system-ui, sans-serif;
   --radius:    8px;
   --shadow:    0 4px 24px rgba(0,0,0,0.10);
@@ -349,12 +349,10 @@ img { max-width: 100%; height: auto; display: block; }
   background: linear-gradient(135deg, #301B4A 0%, #60245c 100%);
   padding: 16px 24px;
 }
-.program-schedule {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #dac293;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+.program-card-top h5 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: #ffffff;
   margin: 0;
 }
 .program-card-body {
@@ -367,19 +365,10 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   flex-direction: column;
 }
-.program-card h5 {
-  font-family: var(--serif);
-  font-size: 1.2rem;
-  color: var(--navy);
-  margin: 0;
-}
 .program-meta {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(0,0,0,0.08);
 }
 .program-row {
   display: flex;
@@ -751,18 +740,25 @@ img { max-width: 100%; height: auto; display: block; }
   overflow: hidden;
 }
 .page-hero::before {
-  content: '\271D';
+  content: '';
   position: absolute;
-  font-size: 280px;
-  color: rgba(201,162,39,0.05);
+  width: 280px;
+  height: 280px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  line-height: 1;
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  -webkit-text-stroke: 0;
+  background-image: url('../images/cross-watermark.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+}
+@media (max-width: 768px) {
+  .page-hero::before { width: 180px; height: 180px; }
+}
+@media (max-width: 480px) {
+  .page-hero::before { width: 130px; height: 130px; }
 }
 .page-hero h1 {
   color: var(--white);
